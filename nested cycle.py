@@ -75,6 +75,17 @@
 # b d
 # b e
 
-for i in 'ab':
-    for j in 'cde':
-        print(j,i)
+# for i in 'ab':
+#     for j in 'cde':
+#         print(j,i)
+
+# c a
+# d a
+# e a
+# c b
+# d b
+# e b
+
+from string import printable
+print(printable)
+
