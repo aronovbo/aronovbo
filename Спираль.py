@@ -1,4 +1,4 @@
 n = int(input())
 a = []
-for in in range(n)
-    a
+for i in range(n):
+    a.append()
