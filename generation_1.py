@@ -24,5 +24,35 @@
 # print(a)
 
 
-a = [i**3 for i in range(1,11)]
-print(a)
+# a = [i**3 for i in range(1,11)]
+# print(a)
+
+# a, b = map(int, input().split())
+# a, b = [int(i) for i in input().split()]
+#
+# if a <= b:
+#     c = [i ** 2 for i in range(a, b+1)]
+# else:
+#     c = [i ** 3 for i in range(a, b - 1, -1)]
+# print(c)
+
+# st = 'Create a list of the first letters of every word in this string'
+# st = st.split()
+# print(st)
+# w = [i[0] for i in st]
+# print(w)
+
+# from string import ascii_uppercase
+# # print(ascii_uppercase) # выведет строку ABCDEFGHIJKLMNOPQRSTUVWXYZ
+# s = ascii_uppercase
+# # print(s)
+# n = int(input())
+# #
+# a = [i for i in s]
+# print(a[:n])
+
+from string import ascii_uppercase
+s = ascii_uppercase
+n = int(input())
+a = [s[i] * (i + 1) for i in range(n)]
+print(a[:n])
