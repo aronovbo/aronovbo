@@ -51,8 +51,17 @@
 # a = [i for i in s]
 # print(a[:n])
 
-from string import ascii_uppercase
-s = ascii_uppercase
-n = int(input())
-a = [s[i] * (i + 1) for i in range(n)]
-print(a[:n])
+# from string import ascii_uppercase
+# s = ascii_uppercase
+# n = int(input())
+# a = [s[i] * (i + 1) for i in range(n)]
+# print(a[:n])
+
+phrase = 'Take only the words that start with t in this sentence'
+s = phrase.split()
+# print(s)
+
+a = [i for i in s if i[0] == 't' or i[0] == 'T']
+print(a)
+print(id(a))
+
