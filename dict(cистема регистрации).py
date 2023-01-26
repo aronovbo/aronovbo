@@ -1,28 +1,27 @@
 n = int(input())
 s = []
 for i in range(1, n+1):
-   s.append([i, input()])
+    s.append([i, input()])
+print('OK')
+n = 0
+for i in range(1,len(s)):
+    if s[0][1] == s[i][1]:
+        n += 1
+        s[i][1] = s[i][1] + str(n * 1)
+        print(s[i][1])
+    elif s[0][1] != s[i][1]:
 
+        print('OK')
 
 print(s)
-s_ = dict(s)
-print(s)
 
 
 
 
 
-# s = {}
-#
-# a = input()
-# b = input()
-# # c = input()
-# # d = input()
-#
-# s[1] = a
-# if b != a:
-#     s[2] = b
-# elif b == a:
-#     s[2] = b + '1'
-#
-# print(s)
+
+
+
+
+
+
