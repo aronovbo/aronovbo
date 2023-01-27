@@ -32,18 +32,41 @@
 #
 # print(sweet["name"])
 
-days = {
-    1: 31,
-    2: 28,
-    3: 31,
-    4: 30,
-    5: 31,
-    6: 30,
-    7: 31,
-    8: 31,
-    9: 30,
-    10: 31,
-    11: 30,
-    12: 31
-}
-tht
+# days = {
+#     1: 31,
+#     2: 28,
+#     3: 31,
+#     4: 30,
+#     5: 31,
+#     6: 30,
+#     7: 31,
+#     8: 31,
+#     9: 30,
+#     10: 31,
+#     11: 30,
+#     12: 31
+# }
+# print(days[int(input())])
+
+# n = int(input())
+# s = [[i,i ** 2] for i in range(1, n+1)]
+# print(s)
+# s = dict(s)
+# print(s)
+
+from string import ascii_lowercase
+s = ascii_lowercase
+alphabet = []
+x = 1
+for i in s:
+    alphabet.append([i, x])
+
+    x += 1
+alphabet = dict(alphabet)
+print(alphabet)
+
+# from string import ascii_lowercase as a
+# alphabet = {a[i]: i + 1 for i in range(26)}
+# print(alphabet)
+
+
