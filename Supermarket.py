@@ -10,3 +10,18 @@ supermarket = {
     "oranges": {"quantity": 40, "price": 0.99},
     "bananas": {"quantity": 23, "price": 1.29}
 }
+food =[]
+sm = 0
+for i in supermarket:
+    food.append(i)
+for i in food:
+    r = supermarket[i]['quantity'] * supermarket[i]['price']
+    sm += r
+print(sm)
+
+
+
+
+
+
+
