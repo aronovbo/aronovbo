@@ -1,3 +1,5 @@
+from pprint import pprint
+
 data = {
     "my_friends": {
         "count": 10,
@@ -53,4 +55,11 @@ data = {
         }]
     }
 }
+s = []
+for i in data["my_friends"]['people']:
+    for j in i:
+        s.append(i[j])
 
+        break
+for j in sorted(s):
+    print(j)
