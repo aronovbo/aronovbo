@@ -7,13 +7,16 @@ morze = {'a': '•—', 'b': '—•••', 'c': '—•—•', 'd': '—•�
          'y': '—•——', 'z': '——••'}
 
 s = input().lower()
-d = []
-# print(s)
 for i in s:
     for j in i:
-        # print(j,end='')
         if j in morze:
-            print(morze[j], end='')
+            print(morze[i], end=' ')
+        else:
+            print()
+
+
+
+
 
 
 
