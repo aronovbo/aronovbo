@@ -21,3 +21,10 @@ user = {
         "term": "Annual"
     }
 }
+
+s = input().split()
+d = {}
+for i in s:
+    if i in user:
+        d[i] = user[i]
+print(d)
