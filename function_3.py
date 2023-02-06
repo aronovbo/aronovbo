@@ -18,19 +18,22 @@
 #     print(j)
 # sum_num()
 
-# def sum_num():
+# def sum_num(s):
 #
 #     j = 0
-#     for i in input():
+#     for i in list(s):
 #         if i.isdigit():
 #             j += int(i)
 #     print(j)
-# sum_num()
+#
+#
+# def sum_num(stroka):       # объявляем функцию для подсчета суммы цифр в строке
+#     total = 0              # создаем переменную для подсчета суммы
+#     for i in list(stroka): # проходимся по списку созданному из строки
+#         if i.isdigit():    # проверяем символ, если цифра, то прибавляем её к сумме
+#             total += int(i)
+#     print(total)           # выводим результат
 
-def sum_num (s):
-    n = 0
-    for i in range(len(s)):
-        if s[i].isdigit():
-            n += int(s[i])
-    print(n)
-sum_num(s)
+n = input()
+s = list(n)
+print(s)
