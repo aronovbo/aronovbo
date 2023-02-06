@@ -7,4 +7,4 @@ def get_body_mass_index(x, y):
     else:
         print('Избыточная масса тела')
 
-get_body_mass_index(70,170)
+get_body_mass_index(53,169)
