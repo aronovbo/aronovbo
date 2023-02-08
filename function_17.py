@@ -19,4 +19,3 @@ def format_name_list(names: list[dict]) -> str:
 
 
 
-
