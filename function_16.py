@@ -15,5 +15,5 @@ def find_duplicate(lst):
     print(q)
 
 
-t = find_duplicate(lst)
-print(t)
+find_duplicate(lst)
+
