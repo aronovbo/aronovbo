@@ -1,12 +1,9 @@
-url = input()
+url = 'http://google.com'
+a =[]
+# def get_domain_name(url):
 
-def get_domain_name(url):
-    url = url.replace('http://', '').replace('https://', '').replace('www.', '')
-    url = url.split('.')
-    return url[0]
-#
+for i in url:
+    print(i)
+    a.append(i)
+    print(a)
 # get_domain_name(url)
-
-# url = url.replace('http://', '').replace('https://', '').replace('www.', '')
-# url = url.split('.')
-# print(url[0])
