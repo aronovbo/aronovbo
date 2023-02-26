@@ -1,19 +1,12 @@
-
-letter = input()
-shift = int(input())
-def shift_letter(letter : str, shift: int):
+def shift_letter(letter: str, shift: int):
     'Функция сдвигает символ letter на shift позиций'
-    s = (ord(letter) - 97 + shift) % 26 + 97
-    return chr(s)
-
-
-def caesar_cipher(letter, shift_letter):
-    text2 = []
+    return chr((ord(letter) - 97 + shift) % 26 + 97)
+def caesar_cipher(letter: str, shift: int):
+    'Шифр цезаря'
+    a = ''
     for i in letter:
         if i.isalpha():
-            shift_letter(i, shift)
-    text2.append(i)
-    return text2
-
-print(caesar_cipher(text,shift_letter()))
-
+            a += shift_letter(i, shift)
+        else:
+            a += i
+    return a
